@@ -1,0 +1,127 @@
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#1a0324] text-white font-sans">
+
+    <!-- Header -->
+    <header class="bg-[#500774] p-6 fixed w-full top-0 left-0 z-10">
+        <div class="container mx-auto flex items-center justify-between">
+            <h1 class="text-4xl font-bold">Delivery Dashboard</h1>
+            <nav>
+                <ul class="flex space-x-8 text-xl">
+                    <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Settings</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Table -->
+    <div class="container mx-auto mt-24 p-6">
+        <table class="w-full table-auto border-collapse text-center text-xl">
+            <thead>
+                <tr class="bg-[#500774]">
+                    <th class="p-4">Company</th>
+                    <th class="p-4">Priority</th>
+                    <th class="p-4">Deadline</th>
+                    <th class="p-4">Progress</th>
+                    <th class="p-4">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example Companies -->
+                <tr class="bg-[#2a2a2a]">
+                    <td class="p-4">Company A</td>
+                    <td class="p-4">
+                        <span class="bg-red-500 p-2 rounded">High</span>
+                    </td>
+                    <td class="p-4">20/03/2025</td>
+                    <td class="p-4">
+                        <div class="w-full bg-gray-700 rounded-full h-6 relative">
+                            <div class="bg-red-500 h-6 rounded-full" style="width: 80%">
+                                <span class="absolute w-full h-full flex items-center justify-center text-white font-bold">80%</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="p-4">
+                        <span class="text-red-500">Late</span>
+                    </td>
+                </tr>
+                <tr class="bg-[#2a2a2a]">
+                    <td class="p-4">Company B</td>
+                    <td class="p-4">
+                        <span class="bg-yellow-500 p-2 rounded">Medium</span>
+                    </td>
+                    <td class="p-4">05/04/2025</td>
+                    <td class="p-4">
+                        <div class="w-full bg-gray-700 rounded-full h-6 relative">
+                            <div class="bg-yellow-500 h-6 rounded-full" style="width: 50%">
+                                <span class="absolute w-full h-full flex items-center justify-center text-white font-bold">50%</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="p-4">
+                        <span class="text-yellow-500">On track</span>
+                    </td>
+                </tr>
+                <tr class="bg-[#2a2a2a]">
+                    <td class="p-4">Company C</td>
+                    <td class="p-4">
+                        <span class="bg-green-500 p-2 rounded">Low</span>
+                    </td>
+                    <td class="p-4">10/05/2025</td>
+                    <td class="p-4">
+                        <div class="w-full bg-gray-700 rounded-full h-6 relative">
+                            <div class="bg-green-500 h-6 rounded-full" style="width: 20%">
+                                <span class="absolute w-full h-full flex items-center justify-center text-white font-bold">20%</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="p-4">
+                        <span class="text-green-500">On time</span>
+                    </td>
+                </tr>
+                <tr class="bg-[#2a2a2a]">
+                    <td class="p-4">Company D</td>
+                    <td class="p-4">
+                        <span class="bg-red-500 p-2 rounded">High</span>
+                    </td>
+                    <td class="p-4">25/03/2025</td>
+                    <td class="p-4">
+                        <div class="w-full bg-gray-700 rounded-full h-6 relative">
+                            <div class="bg-red-500 h-6 rounded-full" style="width: 90%">
+                                <span class="absolute w-full h-full flex items-center justify-center text-white font-bold">90%</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="p-4">
+                        <span class="text-red-500">Late</span>
+                    </td>
+                </tr>
+                <tr class="bg-[#2a2a2a]">
+                    <td class="p-4">Company E</td>
+                    <td class="p-4">
+                        <span class="bg-yellow-500 p-2 rounded">Medium</span>
+                    </td>
+                    <td class="p-4">15/04/2025</td>
+                    <td class="p-4">
+                        <div class="w-full bg-gray-700 rounded-full h-6 relative">
+                            <div class="bg-yellow-500 h-6 rounded-full" style="width: 60%">
+                                <span class="absolute w-full h-full flex items-center justify-center text-white font-bold">60%</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="p-4">
+                        <span class="text-yellow-500">On track</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
